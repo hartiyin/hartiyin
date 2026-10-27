@@ -16,10 +16,10 @@
   --body:"Golos Text","Segoe UI",system-ui,-apple-system,sans-serif;
   --sab:max(env(safe-area-inset-bottom,0px),var(--tg-safe-area-inset-bottom,0px));
   /* Qirollik — krem + qirollik koʻki (standart) */
-  --bg:#FBF6EC;--surface:#FFFDF8;--raise:#F3EDE0;--sunk:#ECE4D3;--fg:#15203B;--muted:#686D7E;--line:#E5DCC9;
-  --accent:#2E4BD6;--accent-ink:#FFFFFF;--glow:rgba(46,75,214,.14);
-  --xp:#96690F;--xp-ink:#FFFFFF;--xp-soft:rgba(201,146,42,.16);
-  --good:#1E8E57;--bad:#CF4339;--ice:#2386C8;--cell:#F2EBDC;--scrim:rgba(21,32,59,.38);
+  --bg:#F8F3F0;--surface:#FFFFFF;--raise:#EEF0FC;--sunk:#EDE7E3;--fg:#0B1530;--muted:#5D6378;--line:#E3E7FC;
+  --accent:#014BAA;--accent-ink:#FFFFFF;--glow:rgba(0,86,255,.13);
+  --xp:#0056FF;--xp-ink:#FFFFFF;--xp-soft:rgba(34,119,255,.12);
+  --good:#1E8E57;--bad:#CF4339;--ice:#2277FF;--cell:#EFEBF3;--scrim:rgba(1,30,80,.38);
   color-scheme:light;
 }
 :root[data-theme="lola"]{
@@ -339,7 +339,7 @@ h2{font-family:var(--display);font-weight:500;font-size:16px;margin:0;text-wrap:
     <button class="icb" id="setBtn" type="button" aria-label="Sozlamalar"><span data-ic="gear"></span><span class="sync" id="sync" title="Saqlandi"></span></button>
   </header>
   <div class="greet">
-    <h1><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="var(--accent)"/><circle cx="32" cy="32" r="21" fill="var(--surface)"/><circle cx="32" cy="32" r="17" fill="none" stroke="#E2B23A" stroke-width="2.5"/><path d="M23 33l6.5 6.5L42 26" fill="none" stroke="var(--accent)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg><span id="greetH">Salom</span></h1>
+    <h1><svg class="mark" viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="30" fill="var(--accent)"/><circle cx="32" cy="32" r="21" fill="var(--surface)"/><circle cx="32" cy="32" r="17" fill="none" stroke="var(--xp)" stroke-width="2.5"/><path d="M23 33l6.5 6.5L42 26" fill="none" stroke="var(--accent)" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/></svg><span id="greetH">Salom</span></h1>
     <p id="phrase"></p>
   </div>
 
@@ -745,7 +745,7 @@ const BADGES=[
 ];
 const BADGE={}; BADGES.forEach(b=>BADGE[b.id]=b);
 const THEMES=[
- {k:"royal",n:"Qirollik",d:"Krem + koʻk",bg:"#FBF6EC",sf:"#FFFDF8",ac:"#2E4BD6",xp:"#D4A13A",dark:false},
+ {k:"royal",n:"Qirollik",d:"Krem + royal blue",bg:"#F8F3F0",sf:"#FFFFFF",ac:"#014BAA",xp:"#2277FF",dark:false},
  {k:"lola",n:"Lola",d:"Pushti + binafsha",bg:"#FFF6F8",sf:"#FFFFFF",ac:"#D23F78",xp:"#8B5CF6",dark:false},
  {k:"bahor",n:"Bahor",d:"Oq + yashil",bg:"#F6F8F9",sf:"#FFFFFF",ac:"#0B8A69",xp:"#F08A24",dark:false},
  {k:"tun",n:"Tun",d:"Qora + amber",bg:"#0D0E14",sf:"#222534",ac:"#FFB04F",xp:"#A396FF",dark:true}
